@@ -19,17 +19,17 @@ This voting machine project uses an ATmega32 microcontroller to handle user voti
    - The LCD is set up to display the initial vote counts for each candidate (A, B, C, D) as "0".
 
 2. **Voting Process**:
-   - **Responsible Button **: Must be pressed to enable the voting process. When pressed, the system enters voting mode, and the appropriate LEDs are lit to indicate the start of the voting process.
-   - **Reset Button **: Resets all vote counts to zero and clears the LCD screen.
+   - Responsible Button: Must be pressed to enable the voting process. When pressed, the system enters voting mode, and the appropriate LEDs are lit to indicate the start of the voting process.
+   - Reset Button: Resets all vote counts to zero and clears the LCD screen.
 
 3. **Voting for Candidates**:
-   - **Candidate A **: When pressed, the vote count for candidate A is incremented by 1, and the corresponding LED turns on. If a different candidate's button was previously pressed, that candidate's LED is turned off, and the count is adjusted accordingly.
-   - **Candidate B **: Similar operation to candidate A, but for candidate B.
-   - **Candidate C**: Similar operation to candidate A, but for candidate C.
-   - **Candidate D **: Similar operation to candidate A, but for candidate D.
+   - Candidate A: When pressed, the vote count for candidate A is incremented by 1, and the corresponding LED turns on. If a different candidate's button was previously pressed, that candidate's LED is turned off, and the count is adjusted accordingly.
+   - Candidate B: Similar operation to candidate A, but for candidate B.
+   - Candidate C: Similar operation to candidate A, but for candidate C.
+   - Candidate D: Similar operation to candidate A, but for candidate D.
 
 4. **Entering the Vote**:
-   - **Enter Button **: When pressed, finalizes the current vote. The LCD display updates to show the new vote counts, and the system prepares for the next vote.
+   - Enter Button: When pressed, finalizes the current vote. The LCD display updates to show the new vote counts, and the system prepares for the next vote.
 
 5. **Displaying Results**:
    - The LCD is continuously updated with the vote counts for each candidate. If the "enter" button is pressed with no changes in the vote counts, the system prompts the user to "please vote" to avoid accidental inputs.
